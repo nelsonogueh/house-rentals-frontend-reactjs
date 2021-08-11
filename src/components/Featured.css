@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.featured{
+    width: 85%;
+    background-color: transparent;
+    margin:121px auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 40px;
+}
+.header h4{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+   
+}
+.featured-card{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
