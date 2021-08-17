@@ -18,7 +18,7 @@
     width: 790px;
     height: 112px;
     background-color: #FCFFFE;
-    border-radius:0 0 12px 12px;
+    border-radius:0.75rem;
     left: 25%;
     top:445px;
     display: flex;
@@ -91,6 +91,7 @@ position: relative;
     justify-content: center;
     align-items: center;
     border: none;
+    cursor: pointer;
 }
 
 .ver-line1{

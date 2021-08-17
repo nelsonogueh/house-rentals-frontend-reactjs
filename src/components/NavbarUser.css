@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.navbar_user{
+    width: 100%;
+    height: 120px;
+    background-color: #FCFFFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    padding: 48px 120px;
+    align-items: baseline;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    margin-bottom: 5px;
+}
+.logo img{
+    margin-left: 10px;
+}
+.search_profile input{
+width: 17.25rem;
+height: 3.5rem;
+padding-left: 1rem;
+padding-right: 3rem;
+border-radius: 0.75rem;
+border: 1px solid #089BC9;
+font-size: 1.13rem;
+line-height: 1.69rem;
+font-weight: 400;
+outline: none;
+}
+.search_profile{
+    margin-right: 2.63rem;
+    display: flex;
+    align-items: center;
+}
+.search_profile input:focus{
+    outline: none;
+    border: 2px solid #089BC9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+}
+#search_logo{
+    font-size: 1.76rem;
+    position: relative;
+    top: 0.3rem;
+    left: -2.88rem;
+    color: #089BC9;
+    cursor: pointer;
+}
+#profile_avatar{
+    font-size: 2rem;
+    color:#089BC9;
+    margin-left: 2.19rem;
+
+}
+
+#profile_avatar sup{
+    font-size: 1rem;
+    color:#E02828 ;
+    font-weight: 600;
+    line-height: 1.5rem;
+    position:relative;
+    top:-0.5rem
+}

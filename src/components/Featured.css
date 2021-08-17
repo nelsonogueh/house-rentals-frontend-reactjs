@@ -15,6 +15,11 @@
     justify-content: space-between;
      margin-bottom: 40px;
 }
+.header img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
+}
 .header h4{
     font-size: 32px;
     font-weight: 700;
@@ -24,6 +29,65 @@
 .featured-card{
     display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   gap: 32px;
+   grid-template-rows: 1fr 1fr;
+   gap: 2rem;
    
+}
+
+.paginationButtons{
+    width: 281px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin:64px auto;
+   
+    
+}
+.paginationButtons a{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid #DFE3E8;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor:pointer;
+}
+.paginationActive{
+    border: 1px solid #089BC9;
+    color:#089BC9;
+}
+.previousButton,.nextButton{
+    color: #DFE3E8;
+}
+.previousButton:hover,.nextButton:hover{
+    background-color: #919EAB;
+    opacity: 0.5;
+    color:#C4CDD5;
+}
+
+.horzontal-line{
+    border-top: 2px solid #C4C4C4;
+    width:100%;
+}
+.download-pointer{
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+}
+.download-pointer img{
+    border-radius: 12px;
+}
+.download{
+    margin-left: 32px;
+}
+.download h2{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 84px;
+}
+.download img{
+    margin-top: 47px;
+    margin-right: 34px;
 }

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+}
+.property{
+    background-color: transparent;
+    padding: 184px 120px 0 120px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head p{
+ font-size: 24px;
+ line-height: 36px;
+ font-weight: 700;
+}
+.property-agent{
+    display: flex;
+    margin-top: 16px;
+}
+.property-agent>img{
+    border-radius: 12px;
+    width:892px;
+    height:523px;
+}
+.user-card{
+    background-color: #fff;
+    width: 276px;
+    height: 403px;
+   margin-left: 32px;
+   border-radius: 12px;
+}
+.user-details{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mark{
+    color:#E02828;
+    font-size: 30px;
+}
+
+.user-details img{
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+}
+#user-name{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+#user-role{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+   text-align: center;
+}
+.contact-agnt{
+    display: flex;
+    flex-direction: column;
+}
+.contact-agnt button{
+
+height: 36px;
+border-radius: 12px;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+background-color: #089BC9;
+color: #fff;
+margin-top: 16px;
+border: none;
+}
+.contact-btn{
+    width: 276px;
+    height: 56px;
+    background-color: #089BC9;
+    margin-left: 32px;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.img-group{
+    margin-top: 16px;
+}
+.img-group img{
+    width: 276px;
+    height: 152px;
+    border-radius: 12px;
+    margin-right: 32px;
+}
+.property-desc{
+    width:892px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 80px;
+    padding: 24px;
+    overflow-y: auto;
+    background-color: #FCFFFE;
+}
+.property-desc >p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    
+}
+.gen-description{
+    margin-top: 20px;
+}
+.gen-description h3{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.gen-description p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.location-desc{
+     width:892px;
+    height: 462px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.location-desc >p{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 16px 0 0 16px;
+    padding-top: 16px;
+    
+}
+.location-desc img{
+    width: 860px;
+    height: 378px;
+    margin: 16px;
+}

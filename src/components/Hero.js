@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import { BiSearch } from 'react-icons/bi'
-import Select from 'react-select'
+
 
 import './Hero.css'
 
@@ -8,9 +8,9 @@ import './Hero.css'
 
 
 function Hero() {
-    const [selected0, setSelected0] = useState('')
-    const [selected1, setSelected1] = useState('')
-    const [selected2, setSelected2] = useState('')
+    const [selected0, setSelected0] = useState('Asaba')
+    const [selected1, setSelected1] = useState('Bungalow')
+    const [selected2, setSelected2] = useState('N300,000')
     const [value,setValue] = useState('')
     function handleChange0(e) {
         let { options, selectedIndex } = e.target
@@ -68,7 +68,7 @@ function Hero() {
                     <p>{ selected2}</p>
                     
                 </div>
-                <button ><BiSearch /></button>
+                <button  ><BiSearch /></button>
             </div>
         </div>
     )
