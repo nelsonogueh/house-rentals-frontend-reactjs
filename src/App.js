@@ -10,6 +10,7 @@ import NavBar from './components/NavBar';
 import NavbarUser from './components/NavbarUser'
 import Dashboard from './pages/Dashboard';
 import Confirmation from './components/Confirmation';
+import AddNewProperty from './pages/AddNewProperty'
 
 
 
@@ -43,6 +44,7 @@ function App() {
             <Route exact path="/" component={Homepage}></Route>
             <Route exact path="/properties/:id" component={Property} />
             <Route exact path="/dashboard/:id" component={Dashboard}/>
+            <Route exact path="/AddNewProperty" children={<AddNewProperty/>} />
           </Switch>
         </main>
         {/* <NavbarUser />

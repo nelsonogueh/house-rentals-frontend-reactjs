@@ -1,11 +1,10 @@
-
 .dashboard{
     background-color: #E5E5E5;
     padding-bottom: 4rem;
     /* display: flex; */
 }
 .dashboard_nav{
-    width: 22.5rem;
+   width: 22.5rem;
    height: 127rem;
    background-color:#089BC9;
    position: fixed;
@@ -33,24 +32,25 @@
 }
 .dashboard_content{
     background-color: transparent;
-    width: 75%;
+    width: 70%;
     position: relative;
-    top: 7.5rem;
-    margin-top: 2rem;
+    top: 5%;
+    margin-top: 0rem;
     margin-left: 22.5rem;
     margin-right: 7.63rem;
     padding-left: 4.25rem;
     margin-bottom: 10rem;
     
 }
-.dashboard_content>button{
+.dashboard_content>.Link>button{
     width: 13.06rem;
     height: 3.5rem;
+    margin-top: 3%;
     border-radius: 0.75rem;
     background-color: #089BC9;
     color: #fff;
     position: relative;
-    left: 51.94rem;
+    left: 77%;
     border: none;
     cursor: pointer;
 }

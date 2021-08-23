@@ -25,7 +25,7 @@ body{
     margin-top: 16px;
 }
 .property-agent>img{
-    border-radius: 12px;
+    /* border-radius: 12px; */
     width:892px;
     height:523px;
 }
@@ -98,14 +98,14 @@ border: none;
 .img-group img{
     width: 276px;
     height: 152px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     margin-right: 32px;
 }
 .property-desc{
     width:892px;
     height: 400px;
     background-color: #fff;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     margin-top: 80px;
     padding: 24px;
     overflow-y: auto;

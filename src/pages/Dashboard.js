@@ -8,6 +8,11 @@ import NavbarUser from '../components/NavbarUser'
 import ReactPagenate from 'react-paginate'
 import Footer from '../components/Footer'
 import properties from '../data'
+import AddNewProperty from './AddNewProperty'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+
 function Dashboard() {
     const [property, setProperty] = useState(properties.slice(0, 100))
     const [pageNumber, setPageNumber] = useState(0)
@@ -34,7 +39,7 @@ function Dashboard() {
                 </ul>
             </div>
                 <div className="dashboard_content">
-                    <button>+Add New</button>
+                    <Link className="Link" to="/AddNewProperty"><button>+Add New</button></Link>
                     <div className="properties">
                      {displayProperties}
                     </div>

@@ -1,10 +1,12 @@
 .signin-page{
-   width:33.75rem;
+   width:47% !important;
    height: 36.25rem; 
-   padding-top: 2rem;
+   padding-top: 1rem;
+   padding-left: 4rem;
+   padding-right: 4rem;
    background-color: #FCFFFE;
    position: fixed;
-   top: 8rem;
+   margin-top: -7%;
    left:33.13rem;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
@@ -37,15 +39,16 @@
 }
 
 .form-group input{
-    
+    width: 100% !important;
     height:3.5rem;
     border: 1px solid #089BC9;
     border-radius: 0.75rem;
     outline: none;
     font-size: 100%;
+
 }
 .large-input{
-    width: 30.25rem !important;
+    width: 99% !important;
 }
 .form-group label{
     font-size: 1.13rem;
@@ -84,7 +87,7 @@
 .remember-me span a{
     text-decoration: none;
     color:#089BC9;
-    margin-left: 10.25rem;
+    margin-left: 8.25rem;
 }
 
 .signin-btn #btn{
