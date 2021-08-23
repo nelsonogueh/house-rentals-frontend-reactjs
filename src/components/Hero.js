@@ -30,6 +30,7 @@ function Hero() {
     return (
         <div className="hero">
                 <img src="/assets/hero.jpg" alt="hero" />
+                <img className="testimage" src="/assets/FIND YOUR DREAM hOME WITH US!.svg" alt="hero2" />
             <div className="hero-search">
                 <div className="search search-0">
                     <div className="search-selector">

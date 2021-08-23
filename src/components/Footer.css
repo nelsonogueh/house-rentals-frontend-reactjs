@@ -1,85 +1,109 @@
 *{
-    margin:0;
-padding:0;
-font-family:Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-box-sizing: border-box;
-}
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .footer{
+      background: #089BC9 !important;
+      height: 500px !important;
+      width: 100% !important;
+      color: #ffffff !important;
+      font-family: 'Poppins';
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .footer a{
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+  .footerDiv{
+width: 100%;
+height: 90%;
+display: flex;
+padding-top: 6%;
+margin-bottom: 0px;
+flex-wrap: wrap;
 
-.footer{
-    padding:120px;
-    width: 100%;
-    height: 500px;
-    background-color: #089BC9;
-}
-.footer-details{
-    display: flex;
-    justify-content: center;
-}
-.footer-details .footer-title{
-    font-size: 24px;
+  }
+.navhead,.conthead,.folhead,.Apphead,.TPhead{
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-transform: capitalize;
+color: #FFFFFF;
+  }
+  .navigation{
+   font-family: 'Poppins';
+   color: #fff;
+   padding-right: 5%;
+   padding-left: 8%;
+  }
+  .footnote{
+    font-family: Poppins;
+    font-style: normal;
     font-weight: 500;
-    line-height: 36px;
-    color: #fff;
-    margin-right: 77px;
-    white-space: nowrap;
-    margin-bottom: 16px;
-}
-.footer-details p{
     font-size: 18px;
-    font-weight: 500;
     line-height: 27px;
-    color: #fff;
-}
-.social-icon{
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 8px;
-    color:#089BC9;
+    text-transform: capitalize;  
+    color: #FFFFFF;
+    padding-top: 10px;
+    
+  }
+  .conthead{
+    padding-right: 38%;
+  }
+  .FollowUS{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border:none;
-    font-size:24px;
-    margin-bottom: 16px;
-    
-   
-}
-#social{
-    margin-left: 197px;
-}
-.red-icons{
-    color:#E11B1B;
-}
-.footer-detials >div {
-    margin-right: 77px;
-    margin-left: 20px;
-}
-.footer-details img{
-   width:180px;
-   height: 56px;
-   display: block;
-   margin-top: 18px; 
-}
-.footer-details .last{
-    margin-left: 77px;
-}
-.contact{
-    white-space: nowrap;
-    
-}
-
-.contact span{
-   margin-right: 11px; 
-}
-#call{
-    margin-top: 32px;
-}
-#copyright{
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
-    color: #fff;
-    margin-top: 50px;
-    font-weight: 300;
+    flex-direction: column;
+  }
+  .socialmedia{
+      margin: 16px 0px 16px 0px;
+      width: 40%;
+      height: 40px;
+  }
+  .folhead{
+    padding-right: 20%;
+    /* margin-left: 10%; */
+  }
+  .contactUs{
+ margin-right: 8%;
+  }
+  .OurApps{
+    width: 20%;
+    position: relative;
+  }
+  .OurApps img{
+      padding-top: 17.2px;
+      width: 70% !important;
+      height: 56px;
+  }
+  .Apphead{
+      width: 70%;
+      margin-left: 13%;
+  }
+  .TermsPolicies{
+    margin-left: 1px;
+  }
+  .OurApps img{
+      width: 180px;
+      height: 56px;
+  }
+  .copyrght{
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+text-transform: capitalize;
+color: #FFFFFF;
+width: 100%;
+height: 16px;
+display: flex;
+justify-content: center;
+  }
+.ytb{
+    padding-bottom: 20px;
 }

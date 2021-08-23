@@ -5,14 +5,14 @@ import { BsFillBookmarkFill } from 'react-icons/bs'
 import {FiMessageCircle} from 'react-icons/fi'
 import './Property.css'
 import NavbarUser from '../components/NavbarUser'
-import NavBar from '../components/NavBar';
+// import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
 function Property() {
     const [isShowMore,setIsShowMore] = useState(false)
     return (
         <div >
-            <NavBar />
+            {/* <NavBar /> */}
             <div className="property">
                
                 <div className="head">
