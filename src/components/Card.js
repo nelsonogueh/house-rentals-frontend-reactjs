@@ -7,12 +7,13 @@ import {FiShare2} from 'react-icons/fi'
 import reactRouterDom from 'react-router-dom';
 
 
-function Card({name,image,price,city,id}) {
+function Card({name,image,price,city,id,date}) {
     return (
         <div className="card">
             <img src={image} alt="" />
             <div>
-                <h3 className="title">{ name}</h3>
+                <h3 className="title">{name}</h3>
+                <p id="date">Posted on <span>{ date}</span> </p>
                 <div className="card-details"><span><GrLocation /></span>
                     <p className="location">{city}</p>
                     <div className="vert-line"></div>

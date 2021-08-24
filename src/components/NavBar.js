@@ -16,17 +16,15 @@ function NavBar({clickeventUp,clickeventIn}) {
                 </Link>
             <ul className="nav-items">
                 <li><button>About us</button></li>
-                <li><button>For Rent</button></li>
+                <li><Link to="/properties"><button>For Rent</button></Link></li>
                 <li ><button className="signin" onClick={clickeventIn}>Agents</button></li>
                 </ul>
                 <span  onClick={()=>setisShowNav(!isShowNav)}><FiMenu /></span>
             </div>
             <ul className={isShowNav?"nav-drawer show ":"nav-drawer"}>
                 <li><button>About us</button></li>
-                <li><button>For Rent</button></li>
-                <li><button>Agents</button></li>
-                <li ><button className="signup"onClick={clickeventUp}>Sign Up</button></li>
-                <li ><button className="signin" onClick={clickeventIn}>Sign In</button></li>
+                <li ><Link to="/properties"><button>For Rent</button></Link></li>
+                <li><button onClick={clickeventIn}>Agents</button></li>
             </ul>
             
             </section>

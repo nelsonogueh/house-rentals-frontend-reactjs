@@ -12,7 +12,7 @@ function NavbarUser() {
                 <img src="/assets/dshr..png" alt="" />
             </div>
             <div className="search_profile">
-                <input type="text" placeHolder="Search" />
+                <input type="text" placeholder="Search" />
                 <span id="search_logo"><FiSearch /></span>
                 <span id="profile_avatar"><FaUser/><sup>1</sup></span> 
             </div>

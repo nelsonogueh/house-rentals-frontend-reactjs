@@ -5,8 +5,8 @@
    position: fixed;
    top: 0.1rem;
    left:19rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
+   box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
     z-index: 1010;
     display: none;
     padding-top: 2rem;
@@ -57,7 +57,7 @@
 }
 .form-group >input:focus{
     border: 2px solid #089BC9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
     
 }
 .password-field{
@@ -66,8 +66,8 @@
 .password-field i{
     font-size: 1.56rem;
     color: #089BC9;
-    margin-left: -1.88rem;
-    margin-top: 0.8rem;
+    /* margin-left: -1.88rem;
+    margin-top: 0.5rem; */
     cursor: pointer;
 }
 .privacy-group input{
@@ -109,7 +109,7 @@
     border:none;
     text-decoration: none;
     color: #089BC9;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.13rem;
+    line-height: 2.44rem;
     cursor: pointer;
 }

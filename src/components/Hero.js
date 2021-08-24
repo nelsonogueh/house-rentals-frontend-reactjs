@@ -29,10 +29,10 @@ function Hero() {
     }
     return (
         <div className="hero">
-                <img src="/assets/hero.jpg" alt="hero" />
-            <div className="hero-search">
-                <div className="search search-0">
-                    <div className="search-selector">
+            <img src="/assets/hero.jpg" className="img-fluid" alt="hero" />
+            <div className="hero-search container">
+                <div className="search search-0 container">
+                    <div className="search-selector container">
                         <span>Location</span>
                       
                     <select name="" id="selector" value={value} onChange={handleChange0} >
@@ -68,7 +68,7 @@ function Hero() {
                     <p>{ selected2}</p>
                     
                 </div>
-                <button  ><BiSearch /></button>
+                <button className="btn"  ><BiSearch /></button>
             </div>
         </div>
     )

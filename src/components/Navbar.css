@@ -8,23 +8,22 @@
 
 .navbar{
     width: 100%;
-    height: 120px;
+    height: 7.5rem;
     background-color: #FCFFFE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
     display: flex;
-    padding: 48px 120px;
+    padding: 2rem 7.5rem;
     align-items: baseline;
+    justify-content: space-between;
     position: fixed;
     top: 0px;
     z-index: 999;
 
 }
 .logo{
-    margin-bottom: 5px;
+    margin-bottom: 0.31rem;
 }
-.logo img{
-    margin-left: 10px;
-}
+
 .nav-items{
   margin-left: auto;
 }
@@ -38,45 +37,38 @@
  border: none;
  color:  #089BC9;
  font-weight: 500;
- line-height: 27px;
- font-size: 18px;
- margin: 0 40px;
-    margin-bottom: 48px;
+ line-height: 1.69rem;
+ font-size: 1.13rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
     cursor: pointer;
 }
-.nav-items >li .signup{
-    background-color: #FCFFFE;
-    border:2px solid #007195;
-    border-radius: 12px;
-    margin-right: 32px;
-     margin-bottom: 32px;
-    color: #007195;
-    width:176px;
-    height: 56px;
 
-}
 .nav-items >li .signin{
    background-color: #089BC9;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     color: #fff;
-    margin-left: 32px; 
-    margin-bottom: 32px;
-    width:176px;
-    height: 56px;
+    margin-left: auto; 
+    margin-bottom: 2rem;
+    width:11rem;
+    height: 3.5rem;
 }
 
 .nav-drawer{
     background-color:#FCFFFE ;
-    padding-left: 20px;
-    height: 300px;
+    position: fixed;
+    width: 100%;
+    padding-left: 1.25rem;
+    height: 18.75rem;
     transition: all 0.3s linear;
     display: none;
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+     box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+     z-index: 800;
 }
 
 .show{
     display: block;
-    height: 300px;
+    height: 18.75rem;
     transform: translateX();
 }
 .nav-drawer>li{
@@ -85,19 +77,19 @@
 .nav-drawer > li button{
     background-color: transparent;
     border:none;
-    font-size: 18px;
+    font-size: 1.13rem;
     font-weight: 500;
      color: #089BC9;
-     margin: 20px 0 0 20px;
+     margin: 1.25rem 0 0 1.25rem;
      text-transform: uppercase;
      transition: all 0.3s linear;
      cursor: pointer;
 }
 .nav-drawer > li button:hover{
-    transform:translateX(10px)
+    transform:translateX(0.63rem)
 }
 .navbar span{
-    font-size: 30px;
+    font-size: 1.88rem;
     color:#089BC9 ;
     cursor: pointer;
     display: none;
@@ -108,7 +100,7 @@
 
 @media screen and (max-width:768px){
     .navbar{
-        padding: 28px 50px;
+        padding: 1.75rem 3.13rem;
     }
     .navbar span{
         margin-left: auto;;
