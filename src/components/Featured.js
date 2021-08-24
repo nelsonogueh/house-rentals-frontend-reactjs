@@ -1,23 +1,23 @@
 import {React,useState} from 'react'
 // import ReactPagenate from 'react-paginate'
-import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
+// import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 import './Featured.css'
 import Card from '../components/Card';
 
 import properties from '../data'
 function Featured() {
-    const [property, setProperty] = useState(properties.slice(0, 100))
-    const [pageNumber, setPageNumber] = useState(0)
+    const [property] = useState(properties.slice(0, 100))
+    const [pageNumber] = useState(0)
     const propertyPerPage = 8;
     const pagesVisited = pageNumber * propertyPerPage;
 
     const displayProperties = property.slice(pagesVisited, pagesVisited + propertyPerPage).map((property) => {
         return <Card id={property.id} name={property.name} city={property.city} image={property.image} price={property.price} />
     })
-    const pageCount = Math.ceil(property.length / propertyPerPage)
-    const changePage = ({selected}) => {
-        setPageNumber(selected)
-    }
+    //const pageCount = Math.ceil(property.length / propertyPerPage)
+//    const changePage = ({selected}) => {
+//         setPageNumber(selected)
+//     }
     return (
         <div className="featured">
             <div className="header">

@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 import { FaUser } from 'react-icons/fa'
 import {FiSearch} from 'react-icons/fi'
 import './NavbarUser.css'

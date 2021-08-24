@@ -1,31 +1,30 @@
 import {React,useState} from 'react'
 import { FiHome,FiPower } from 'react-icons/fi'
-import { BsEnvelope } from 'react-icons/bs'
+//mport { BsEnvelope } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import ProfileCard from '../components/ProfileCard'
 import NavbarUser from '../components/NavbarUser'
-import ReactPagenate from 'react-paginate'
-import Footer from '../components/Footer'
+//import ReactPagenate from 'react-paginate'
+//import Footer from '../components/Footer'
 import properties from '../data'
-import AddNewProperty from './AddNewProperty'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
 function Dashboard() {
-    const [property, setProperty] = useState(properties.slice(0, 100))
-    const [pageNumber, setPageNumber] = useState(0)
+    const [property] = useState(properties.slice(0, 100))
+    const [pageNumber] = useState(0)
     const propertyPerPage = 8;
     const pagesVisited = pageNumber * propertyPerPage;
 
     const displayProperties = property.slice(pagesVisited, pagesVisited + propertyPerPage).map((property) => {
         return <ProfileCard id={property.id} name={property.name} city={property.city} image={property.image} price={property.price} />
     })
-    const pageCount = Math.ceil(property.length / propertyPerPage)
-    const changePage = ({selected}) => {
-        setPageNumber(selected)
-    }
+    //const pageCount = Math.ceil(property.length / propertyPerPage)
+    // const changePage = ({selected}) => {
+    //     setPageNumber(selected)
+    // }
 
     return (
         <section>

@@ -11,7 +11,7 @@ function Hero() {
     const [selected0, setSelected0] = useState('Asaba')
     const [selected1, setSelected1] = useState('Bungalow')
     const [selected2, setSelected2] = useState('N300,000')
-    const [value,setValue] = useState('')
+    const [value] = useState('')
     function handleChange0(e) {
         let { options, selectedIndex } = e.target
         setSelected0(options[selectedIndex].text)
