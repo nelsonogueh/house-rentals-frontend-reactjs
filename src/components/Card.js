@@ -4,7 +4,7 @@ import './Card.css';
 import { GrLocation } from 'react-icons/gr'
 import {FaHeart} from 'react-icons/fa'
 import {FiShare2} from 'react-icons/fi'
-import reactRouterDom from 'react-router-dom';
+//import reactRouterDom from 'react-router-dom';
 
 
 function Card({name,image,price,city,id}) {

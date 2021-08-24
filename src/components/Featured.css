@@ -69,7 +69,8 @@
 
 .horzontal-line{
     border-top: 2px solid #C4C4C4;
-    width:100%;
+    width:100% !important;
+    margin: 64px 0px 0px 0px !important;
 }
 .download-pointer{
     display: flex;

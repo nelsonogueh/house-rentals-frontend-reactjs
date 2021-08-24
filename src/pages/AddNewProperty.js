@@ -7,7 +7,6 @@ import { FiHome,FiPower } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 //import ImageUpload from '../Component/ImageUpload'
-
 export default function AddNewProperty() {
     return (
     <section>
@@ -63,7 +62,7 @@ export default function AddNewProperty() {
                 <option>Sapele</option>
                 </select>
             </div>
-            <div class="lGAsel col-md-4">
+            <div class="lGAsel col-md-6">
                 <label for="inputZip" class="form-label">Local Goverment Area</label>
                 <select id="inputState" class="Local_Goverment_Area">
                 <option selected></option>

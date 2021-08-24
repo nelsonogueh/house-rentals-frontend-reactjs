@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import ReactPagenate from 'react-paginate'
+// import ReactPagenate from 'react-paginate'
 import {IoIosArrowBack,IoIosArrowForward} from 'react-icons/io'
 import './Featured.css'
 import Card from '../components/Card';
@@ -27,7 +27,7 @@ function Featured() {
             <div className="featured-card">
                 {displayProperties}
             </div>
-            <ReactPagenate
+            {/* <ReactPagenate
                     previousLabel={<span><IoIosArrowBack/></span>}
                     nextLabel={<span><IoIosArrowForward/></span>}
                     pageCount={pageCount}
@@ -35,10 +35,10 @@ function Featured() {
                     containerClassName={"paginationButtons"}
                     previousLinkClassName={"previousButton"}
                     nextLinkClassName={"nextButton"}
-                activeClassName={"paginationActive"} />
+                activeClassName={"paginationActive"} /> */}
             <div className="horzontal-line"></div>
             <div className="download-pointer">
-                <img src="/assets/black-img.png" alt="" />
+                <img src="/assets/phone.svg" alt="" />
                 <div className="download">
                     <h2>Download our Mobile Application for free</h2>
                     <div>

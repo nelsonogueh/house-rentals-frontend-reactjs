@@ -7,9 +7,9 @@ import Backdrop from './components/Backdrop';
 import Signup from './pages/Signup';
 import SignIn from './pages/SignIn';
 import NavBar from './components/NavBar';
-import NavbarUser from './components/NavbarUser'
+//import NavbarUser from './components/NavbarUser'
 import Dashboard from './pages/Dashboard';
-import Confirmation from './components/Confirmation';
+//import Confirmation from './components/Confirmation';
 import AddNewProperty from './pages/AddNewProperty'
 
 
