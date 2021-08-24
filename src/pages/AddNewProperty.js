@@ -2,13 +2,26 @@ import React from 'react'
 import { form } from "react-bootstrap/Form";
 import '../components/AddNewProperty.css';
 import FileUploadComponent from '../components/FilesUploadComponent';
+import NavbarUser from '../components/NavbarUser'
+import { FiHome,FiPower } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
+import './Dashboard.css'
 //import ImageUpload from '../Component/ImageUpload'
 
 export default function AddNewProperty() {
     return (
+    <section>
+    <NavbarUser />
+    <div className="dashboard_nav">
+                <ul>
+                    <li><Link to="/dashboard"><span><FiHome /></span> Dashboard</Link></li>
+                    {/* <li><Link><span><BsEnvelope /></span>Client Request</Link></li> */}
+                    <li><Link to="/"><span><FiPower /></span>Sign Out</Link></li>
+                </ul>
+     </div>
     <div className="form_container">
-        <form class="myform row g-4">
-            <div class="col-md-12">
+        <form class="myform row g-4 gy-2 gx-3 align-items-center">
+            <div class="col-12">
                 <label for="inputEmail4" class="form-label">Title</label>
                 <input type="text" class="inputTitle" id="inputEmail4"></input>
             </div>
@@ -60,11 +73,11 @@ export default function AddNewProperty() {
                 <option>Ika North</option>
                 </select>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <label for="inputAddress2" class="addFeature form-label">Landmark</label>
                 <textarea class="Landmark" aria-label="With textarea"></textarea>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <label for="inputAddress2" class="addFeature form-label">Additional Features</label>
                 <textarea class="Additional_Features" aria-label="With textarea"></textarea>
             </div>
@@ -76,17 +89,17 @@ export default function AddNewProperty() {
                 <label for="inputZip" class="form-label">Phone Number</label>
                 <input id="inputState" class="phoneNo" placeholder="090***"></input>       
             </div>
-            <div class="field" align="left">
+            <div class="field col-md-12" align="left">
                 <label className="addFeature form-label">Upload Picture</label>
                 <FileUploadComponent />
             </div>
    
-            <div class="col-12">
+            <div class="col-md-12">
                 <button type="submit" class="ADD_NEW">Upload</button>
             </div>
         </form>
         
     </div>
-    
+    </section>
     )
 }
