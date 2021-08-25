@@ -13,6 +13,7 @@ import NavBar from './components/NavBar';
 import Dashboard from './pages/Dashboard';
 import Confirmation from './components/Confirmation';
 import Forent from './pages/Forent';
+import AddNewProperty from './pages/AddNewProperty';
 //import Loader from './components/Loader';
 
 
@@ -57,6 +58,7 @@ function App() {
             <Route exact path="/properties/:id" component={Property} />
             <Route exact path="/dashboard/:id" component={Dashboard}/>
             <Route exact path="/properties" component={Forent}/>
+            <Route exact path="/AddNewProperty" children={<AddNewProperty/>} />
           </Switch>
         </main>
         {/* <NavbarUser />

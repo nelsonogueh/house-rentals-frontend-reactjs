@@ -7,27 +7,42 @@ import Card from '../components/Card';
 import Loader from './Loader'
 // import properties from '../data'
 
-const url = "http://localhost:9000/api/vi/properties"
-// const url = "https://ict-yep.herokuapp.com/api/v1/properties"
+//const url = "http://localhost:9000/api/vi/properties"
+
 
 function Featured() {
-    const [properties, setProperties] = useState([])
+    const [properties, setProperties] = useState([]);
+    const url = "https://ict-yep.herokuapp.com/api/v1/properties";
     const [isLoading,setIsLoading] = useState(true)
+//axios.get(url).then((response) => {
+  //  setLists(response.data.results);
+//});
 
-    const getData = async() => {
-        const response = await axios.get(url)
-        
-        console.log(response.data)
+useEffect(() => {
+    axios.get(url).then((response) => {
+        setProperties(response.data.data);
         if (response.data.data) {
-            // console.log(response.data)
-            setProperties(response.data.data)
-            setIsLoading(false)
-            // console.log(properties)
-        }
-    }
-    useEffect(() => {
-       getData ()
-    },[])
+    console.log(response.data)
+    setProperties(response.data.data)
+    setIsLoading(false)
+}
+    });
+  },[url]);
+  
+
+// axios.get(url).then((response) {
+//     setProperties(response.data)
+//         console.log(response)
+//         if (response.data.data) {
+//              console.log(response.data)
+//             setProperties(response.data.data)
+//             setIsLoading(false)
+//             // console.log(properties)
+//         }
+//     }
+//     useEffect(() => {
+//        getData ()
+//     },[])
 
     const addZero = (n) => {
         return n<10? `0${n}`:n

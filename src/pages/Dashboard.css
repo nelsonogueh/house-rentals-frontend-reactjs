@@ -54,6 +54,18 @@
     border: none;
     cursor: pointer;
 }
+.dashboard_content>.Link>button{
+    width: 13.06rem;
+    height: 3.5rem;
+    margin-top: 3%;
+    border-radius: 0.75rem;
+    background-color: #089BC9;
+    color: #fff;
+    position: relative;
+    left: 73%;
+    border: none;
+    cursor: pointer;
+}
 .properties{
     margin-top: 2rem;
      display: grid;
