@@ -8,54 +8,56 @@
 .featured{
     width: 85%;
     background-color: transparent;
-    margin:121px auto;
+    margin:7.56rem auto;
 }
 .header{
     display: flex;
     justify-content: space-between;
-     margin-bottom: 40px;
+     margin-bottom: 2.5rem;
 }
 .header img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     opacity: 0.8;
+    position: fixed;
+    right: 9.5rem;
 }
 .header h4{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 3rem;
    
 }
 .featured-card{
     display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr;
-   gap: 2rem;
+   gap: 4rem;
    
 }
 
 .paginationButtons{
-    width: 281px;
+    width: 17.56rem;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    margin:64px auto;
+    margin:4rem auto;
    
     
 }
 .paginationButtons a{
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  border: 1px solid #DFE3E8;
-    border-radius: 4px;
+  border: 0.06rem solid #DFE3E8;
+    border-radius: 0.25rem;
     background-color: #fff;
     cursor:pointer;
 }
 .paginationActive{
-    border: 1px solid #089BC9;
+    border: 0.06rem solid #089BC9;
     color:#089BC9;
 }
 .previousButton,.nextButton{
@@ -68,27 +70,26 @@
 }
 
 .horzontal-line{
-    border-top: 2px solid #C4C4C4;
-    width:100% !important;
-    margin: 64px 0px 0px 0px !important;
+    border-top: 0.13rem solid #C4C4C4;
+    width:100%;
 }
 .download-pointer{
     display: flex;
     align-items: center;
-    padding-top: 64px;
+    padding-top: 4rem;
 }
 .download-pointer img{
-    border-radius: 12px;
+    border-radius: 0.75rem;
 }
 .download{
-    margin-left: 32px;
+    margin-left: 2rem;
 }
 .download h2{
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 700;
-    line-height: 84px;
+    line-height: 5.25rem;
 }
 .download img{
-    margin-top: 47px;
-    margin-right: 34px;
+    margin-top: 2.94rem;
+    margin-right: 2.13rem;
 }

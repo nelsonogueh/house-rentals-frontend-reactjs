@@ -1,10 +1,10 @@
 import React from 'react'
 import './Backdrop.css'
 
-function Backdrop({showUp,showIn,clickevent}) {
+function Backdrop({showUp,showIn,showConfirm,clickevent}) {
     return (
         
-          <div className={showUp||showIn?"backdrop show":"backdrop"} onClick={clickevent}></div>   
+          <div className={showUp||showConfirm||showIn?"backdrop show":"backdrop"} onClick={clickevent}></div>   
         
     )
 }

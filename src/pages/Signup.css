@@ -1,15 +1,15 @@
 .signup-page{
-   width:55% !important;
-   height: 38.25rem; 
+   width:61rem;
+   height: 50.25rem; 
    background-color: #FCFFFE;
    position: fixed;
    top: 0.1rem;
-   left: 19rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
-    border-radius: 8px;
+   left:19rem;
+   box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
     z-index: 1010;
     display: none;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .show{
     display: block;
@@ -24,13 +24,13 @@
     text-align: center;
     font-size: 1.13rem;
     font-weight: 300;
-    line-height: 1.5rem;
+    line-height: 1.69rem;
     
 }
 .signup-page #big{
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 2.75rem;
+    line-height: 3.75rem;
     margin-top: 0.31rem;
 }
 .form-level{
@@ -39,25 +39,25 @@
 .form-group{
     display: flex;
     flex-direction: column;
-    margin: 1rem ;
+    margin: 1.5rem ;
 }
 .form-group input{
-    height:3rem !important;
+    width: 23.69rem;
+    height:3.5rem;
     border: 1px solid #089BC9;
     border-radius: 0.75rem;
     outline: none;
     font-size: 100%;
     padding-left: 1rem;
-    width: 200px !important;
 }
 .form-group label{
     font-size: 1.13rem;
     font-weight: 500;
-    line-height: 1.5rem !important;
+    line-height: 1.69rem;
 }
 .form-group >input:focus{
     border: 2px solid #089BC9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.08);
     
 }
 .password-field{
@@ -66,14 +66,14 @@
 .password-field i{
     font-size: 1.56rem;
     color: #089BC9;
-    margin-left: -1.88rem;
-    margin-top: 0.8rem;
+    /* margin-left: -1.88rem;
+    margin-top: 0.5rem; */
     cursor: pointer;
 }
 .privacy-group input{
     width: 1.5rem;
-    height: 1rem !important;
-    margin-left: 8.76rem;
+    height: 1.5rem;
+    margin-left: 5.76rem;
     border: 2px solid #089BC9;
     border-radius: 0.5rem;
     background-color:#089BC9; 
@@ -90,12 +90,12 @@
 }
 .signup-btn #btn{
     width: 30rem;
-    height: 3rem !important;
+    height: 3.5rem;
     background-color: #089BC9;
     border-radius: 0.5rem;
-    margin-left: 8.5rem;
+    margin-left: 15.56rem;
     margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: 1.13rem;
     font-weight: 500;
     line-height: 1.69rem;
@@ -109,7 +109,7 @@
     border:none;
     text-decoration: none;
     color: #089BC9;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 1.13rem;
+    line-height: 2.44rem;
     cursor: pointer;
 }

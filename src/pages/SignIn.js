@@ -1,10 +1,14 @@
-import { React, useState, useReducer, useEffect } from 'react';
-import { Redirect,NavLink,Link,useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-import{BsEyeSlash,BsEye} from 'react-icons/bs'
+import { React, useState, useReducer} from 'react';
+//import { React, useState, useReducer, useEffect } from 'react';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+//import { Redirect,NavLink,Link,useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { BsEyeSlash, BsEye } from 'react-icons/bs'
+import axios from 'axios';
 import './SignIn.css'
+import Modal from '../components/Modal';
 
 
-
+ const url = "http://localhost:9000/api/v1/users/signin"
 const reducer = (state,action) => {
     switch (action.type) {
         case 'ERROR':
@@ -25,18 +29,12 @@ const defaultState = {
 }
 function SignIn({ showSignIn, clickeventUp,setIsShowSigIn }) {
     let history = useHistory()
-    useEffect(() => {
-        setTimeout(() => {
-            closeMessage()
-        },10000)
-    })
-
     const [showPassword, setShowPassword] = useState(false)
     const [state,dispatch] = useReducer(reducer,defaultState)
 
     const [email, setEmail] = useState('')
     const [password,setPassword] = useState('')
-    const [showError,setShowError] = useState(true)
+   // const [showError,setShowError] = useState(true)
     const show = () => {
         setShowPassword(!showPassword)
     }
@@ -53,7 +51,12 @@ function SignIn({ showSignIn, clickeventUp,setIsShowSigIn }) {
             dispatch({type:'PASSWORD_ERROR'})
         }
         else {
+            const response = axios.post(url, {
+                email, password
+            })
+            console.log(response)
             // <Redirect to="/dashboard" />
+            // submit to backend
             history.push('/dashboard/1234')
             setIsShowSigIn(false)
         }
@@ -63,7 +66,7 @@ function SignIn({ showSignIn, clickeventUp,setIsShowSigIn }) {
     }
     return (
         <div className={showSignIn ? "signin-page show" : "signin-page"}>
-            <p className="error">{ state.showError&&state.errorMessage}</p>
+            { state.showError&&<Modal message={state.errorMessage} closeModal={closeMessage}  />}
             <p id="big">Welcome Back!</p>
             <p>Find your perfect dream with just a few steps</p>
             
@@ -86,7 +89,7 @@ function SignIn({ showSignIn, clickeventUp,setIsShowSigIn }) {
              
             <div className="remember-me">
                 <input type="checkbox" name="" id="" />
-          <span>Remember me<a href="#">Forgot Password</a></span>
+          <span>Remember me<a href="#rt">Forgot Password</a></span>
             </div>
             <div className="signin-btn">
                 <button id="btn" onClick={ handleSubmit}>Sign In</button>

@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import { FiHome,FiPower } from 'react-icons/fi'
-//mport { BsEnvelope } from 'react-icons/bs'
+import { BsEnvelope } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import ProfileCard from '../components/ProfileCard'
@@ -8,10 +8,6 @@ import NavbarUser from '../components/NavbarUser'
 //import ReactPagenate from 'react-paginate'
 //import Footer from '../components/Footer'
 import properties from '../data'
-//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-
-
 function Dashboard() {
     const [property] = useState(properties.slice(0, 100))
     const [pageNumber] = useState(0)
@@ -21,7 +17,7 @@ function Dashboard() {
     const displayProperties = property.slice(pagesVisited, pagesVisited + propertyPerPage).map((property) => {
         return <ProfileCard id={property.id} name={property.name} city={property.city} image={property.image} price={property.price} />
     })
-    //const pageCount = Math.ceil(property.length / propertyPerPage)
+    // const pageCount = Math.ceil(property.length / propertyPerPage)
     // const changePage = ({selected}) => {
     //     setPageNumber(selected)
     // }
@@ -33,12 +29,12 @@ function Dashboard() {
             <div className="dashboard_nav">
                 <ul>
                     <li><Link to="/dashboard"><span><FiHome /></span> Dashboard</Link></li>
-                    {/* <li><Link><span><BsEnvelope /></span>Client Request</Link></li> */}
+                    <li><Link><span><BsEnvelope /></span>Client Request</Link></li>
                     <li><Link to="/"><span><FiPower /></span>Sign Out</Link></li>
                 </ul>
             </div>
                 <div className="dashboard_content">
-                    <Link className="Link" to="/AddNewProperty"><button>+Add New</button></Link>
+                <Link className="Link" to="/AddNewProperty"><button>+Add New</button></Link>
                     <div className="properties">
                      {displayProperties}
                     </div>
