@@ -22,7 +22,7 @@ function Card({name,image,price,city,id,date}) {
                 <div className="engage-bar">
                     <span><FaHeart /></span>
                     <span><FiShare2 /></span>
-                    <Link to={`/properties/${id}`}><button>View</button></Link>
+                    <Link id="link" to={`/properties/${id}`}><button>View</button></Link>
                 </div>
             </div>
         </div>

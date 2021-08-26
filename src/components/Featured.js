@@ -22,7 +22,7 @@ useEffect(() => {
     axios.get(url).then((response) => {
         setProperties(response.data.data);
         if (response.data.data) {
-    console.log(response.data)
+    //console.log(response.data)
     setProperties(response.data.data)
     setIsLoading(false)
 }
@@ -72,7 +72,7 @@ useEffect(() => {
             </div>
             <div className="horzontal-line"></div>
             <div className="download-pointer">
-                <img src="/assets/black-img.png" alt="" />
+                <img src="/assets/black-img.svg" alt="" />
                 <div className="download">
                     <h2>Download our Mobile Application for free</h2>
                     <div>

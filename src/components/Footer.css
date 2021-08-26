@@ -1,27 +1,28 @@
 *{
-    margin:0;
+margin:0;
 padding:0;
 font-family:Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 box-sizing: border-box;
 }
 
 .footer{
-    padding:7.5rem 0 7.5rem 7.5rem;
-    
-    width: 100%;
+    padding:7.5rem 3% 7.5rem 3% !important;
+    margin: 0px !important;
+    width: 100% !important;
     height: 31.25rem;
     background-color: #089BC9;
 }
 .footer-details{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .footer-details .footer-title{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.25rem;
     color: #fff;
-    margin-right: 4.81rem;
+    margin-right: 0 !important;
     white-space: nowrap;
     margin-bottom: 1rem;
 }
@@ -46,16 +47,17 @@ box-sizing: border-box;
     
    
 }
-#social{
-    margin-left: 12.31rem;
-}
+/* #social{
+    margin-left: 2% !important;
+    margin-right: 3% !important;
+} */
 .red-icons{
     color:#E11B1B;
 }
 
-.footer-detials >div  p{
-    margin-right: 4.81rem;
-    margin-left: 1.25rem;
+.footer-details >div  p{
+    margin-right: 4%;
+    margin-left: 0%;
 
 }
 .footer-details img{
@@ -64,9 +66,9 @@ box-sizing: border-box;
    display: block;
    margin-top: 1.13rem; 
 }
-.footer-details .last{
+/* .footer-details .last{
     margin-left: 4.81rem;
-}
+} */
 .contact{
     white-space: nowrap;
     

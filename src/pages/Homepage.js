@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 //import Signup from './Signup';
 function Homepage() {
   return (
-    <div className="App">
+    <div className="Home">
       
       <Hero />
       <Featured />

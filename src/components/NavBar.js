@@ -6,7 +6,7 @@ import {FiMenu} from 'react-icons/fi'
 function NavBar({clickeventUp,clickeventIn}) {
     const [isShowNav, setisShowNav] = useState(false)
     return (
-        <section>
+        <section className="navbarSection">
             <div className="navbar">
                 <Link to="/">
                     <div className="logo">

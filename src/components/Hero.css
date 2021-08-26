@@ -133,4 +133,10 @@ position: relative;
     margin-top: 20px;
     margin-left: 30px;
 }
-
+.testimage{
+    position: absolute !important;
+    width: 20% !important;
+    height: 50% !important;
+    left: 6.8% !important;
+    top: 26% !important;
+}

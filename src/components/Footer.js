@@ -8,8 +8,8 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <div className="footer">
-            <div className="footer-details">
+    <div className="footer">
+        <div className="footer-details">
             <div>
                 <p className="footer-title">Navigation</p>
                 <p>About</p>

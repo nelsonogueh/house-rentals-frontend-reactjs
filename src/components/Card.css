@@ -6,8 +6,8 @@
 }
 .card{
     background-color: #fff;
-    width: 17.25rem;
-    height: 26.81rem;
+    width: 276px;
+    height: 429px !important;
     border-radius: 12px;
 }
 
@@ -78,4 +78,7 @@
     line-height: 1.31rem;
     margin-left: auto;
     cursor: pointer;
+}
+#link button{
+    margin-bottom: 16% !important;
 }
