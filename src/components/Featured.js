@@ -56,8 +56,9 @@ useEffect(() => {
        return `${addZero(day)} ${monthNames[month]}, ${year}`
         
     }
-    const displayProperties = properties.map((property) => {
-        return <Card id={property._id} name={property.title} city={property.city} image={property.image} price={property.propertyPrice} date={showDate(property.addedDate)} />
+    const displayProperties = properties.map((property, index) => {
+        return <Card id={property._id} name={property.propertyType} city={property.city} 
+        image={property.propertyImages[index]} price={property.propertyPrice} date={showDate(property.addedDate)} />
     })
 
     return (
