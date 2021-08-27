@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import { FiHome,FiPower } from 'react-icons/fi'
-import { BsEnvelope } from 'react-icons/bs'
+//import { BsEnvelope } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import ProfileCard from '../components/ProfileCard'
@@ -29,7 +29,7 @@ function Dashboard() {
             <div className="dashboard_nav">
                 <ul>
                     <li><Link to="/dashboard"><span><FiHome /></span> Dashboard</Link></li>
-                    <li><Link><span><BsEnvelope /></span>Client Request</Link></li>
+                    {/* <li><Link><span><BsEnvelope /></span>Client Request</Link></li> */}
                     <li><Link to="/"><span><FiPower /></span>Sign Out</Link></li>
                 </ul>
             </div>
