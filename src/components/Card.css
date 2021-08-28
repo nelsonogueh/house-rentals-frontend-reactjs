@@ -21,6 +21,7 @@
     font-weight: 600;
     line-height: 2.25rem;
     margin:8px 0.75rem;
+    text-transform: capitalize;
 }
 #date{
     font-size: 0.75rem;
