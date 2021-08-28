@@ -26,7 +26,7 @@ useEffect(() => {
     // const addZero = (n) => {
     //     return n<10? `0${n}`:n;
     // }
-          // const [property,setproperty] = useState(properties.slice(0, 100))
+    //const [property,setproperty] = useState(properties.slice(0, 100))
     const [pageNumber, setPageNumber] = useState(0)
     const propertyPerPage = 16;
     const pagesVisited = pageNumber * propertyPerPage;
@@ -44,7 +44,7 @@ useEffect(() => {
 
     const displayProperties = properties.slice(pagesVisited, pagesVisited + propertyPerPage).map((property) => {
         return <Card id={property.id} name={property.propertyType} city={property.city} 
-        image={property.image} price={property.propertyPrice } date={showDate(property.addedDate)} />
+        image={property.propertyImages[0]} price={property.propertyPrice } date={showDate(property.addedDate)} />
     })
     const pageCount = Math.ceil(properties.length / propertyPerPage)
     const changePage = ({selected}) => {

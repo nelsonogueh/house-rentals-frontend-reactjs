@@ -35,7 +35,7 @@ useEffect(() => {
     }
     const displayProperties = properties.map((property, index) => {
         return <Card id={property._id} name={property.propertyType} city={property.city} 
-        image={property.propertyImages[index]} price={property.propertyPrice} 
+        image={property.propertyImages[0]} price={property.propertyPrice} 
         date={showDate(property.addedDate)} />
     })
 
