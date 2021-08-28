@@ -5,7 +5,7 @@
 }
 
 .forRent{
-    width: 100%;
+    width: 100% !important;
     margin-top: 12.5rem;
    
     background-color: transparent;
@@ -13,9 +13,9 @@
    overflow-x: hidden;
 }
 .search-bar{
-    width: 83.33rem;
+    width: 83.5% !important;
     height: 6.25rem;
-    margin: 0 7.5rem;
+    margin: 0 7.5rem !important;
     background-color: #fff;
     opacity: 0.6;
     display: flex;
@@ -52,12 +52,12 @@
     margin-top: 4rem;
     margin-left: 8.33%;
     margin-right: 8.33%;
-      display: grid;
-      width: 83.33%;
-      margin-bottom: 5.06rem;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   /* grid-template-rows: 1fr 1fr; */
-   gap: 4.2rem;
+    display: grid;
+    width: 83.33%;
+    margin-bottom: 5.06rem;
+    grid-template-columns: 2fr 2fr 2fr 2fr !important;
+    grid-template-rows: 0fr 0fr !important;
+    gap: 1.1%;
    
 }
 .paginationButtons{

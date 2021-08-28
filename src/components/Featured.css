@@ -31,7 +31,7 @@
    
 }
 .featured-card{
-    display: grid;
+   display: grid;
    grid-template-columns: 2fr 2fr 2fr 2fr !important;
    grid-template-rows: 0fr 0fr !important;
    gap: 1.1%;

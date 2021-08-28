@@ -6,18 +6,11 @@ import './Featured.css'
 import Card from '../components/Card';
 import Loader from './Loader'
 // import properties from '../data'
-
 //const url = "http://localhost:9000/api/vi/properties"
-
-
 function Featured() {
     const [properties, setProperties] = useState([]);
     const url = "https://ict-yep.herokuapp.com/api/v1/properties";
     const [isLoading,setIsLoading] = useState(true)
-//axios.get(url).then((response) => {
-  //  setLists(response.data.results);
-//});
-
 useEffect(() => {
     axios.get(url).then((response) => {
         setProperties(response.data.data);
@@ -28,24 +21,8 @@ useEffect(() => {
 }
     });
   },[url]);
-  
-
-// axios.get(url).then((response) {
-//     setProperties(response.data)
-//         console.log(response)
-//         if (response.data.data) {
-//              console.log(response.data)
-//             setProperties(response.data.data)
-//             setIsLoading(false)
-//             // console.log(properties)
-//         }
-//     }
-//     useEffect(() => {
-//        getData ()
-//     },[])
-
     const addZero = (n) => {
-        return n<10? `0${n}`:n
+        return n<10? `0${n}`:n;
     }
     let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const showDate = (date) => {
@@ -58,7 +35,8 @@ useEffect(() => {
     }
     const displayProperties = properties.map((property, index) => {
         return <Card id={property._id} name={property.propertyType} city={property.city} 
-        image={property.propertyImages[index]} price={property.propertyPrice} date={showDate(property.addedDate)} />
+        image={property.propertyImages[index]} price={property.propertyPrice} 
+        date={showDate(property.addedDate)} />
     })
 
     return (
