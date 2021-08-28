@@ -1,16 +1,16 @@
 import {React} from 'react'
-//import {React,useState} from 'react'
+//import {useState} from 'react'
 import { GrLocation } from 'react-icons/gr'
 import { ImPhone } from 'react-icons/im'
 import { BsFillBookmarkFill } from 'react-icons/bs'
 import {FiMessageCircle} from 'react-icons/fi'
-//import './Property.css'
+import './Property.css'
 //import NavbarUser from '../components/NavbarUser'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
 function Property() {
-   // const [isShowMore,setIsShowMore] = useState(false)
+   //const [isShowMore,setIsShowMore] = useState(false)
     return (
         <div >
             <NavBar />
