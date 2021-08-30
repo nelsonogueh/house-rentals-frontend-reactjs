@@ -1,23 +1,7 @@
-import {React} from 'react'
-//import {useState} from 'react'
-import { GrLocation } from 'react-icons/gr'
-import { ImPhone } from 'react-icons/im'
-import { BsFillBookmarkFill } from 'react-icons/bs'
-import {FiMessageCircle} from 'react-icons/fi'
-import './Property.css'
-//import NavbarUser from '../components/NavbarUser'
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer'
-
-function Property() {
-   //const [isShowMore,setIsShowMore] = useState(false)
-    return (
-        <div >
-            <NavBar />
-            <div className="property">
+<div className="property">
                
                 <div className="head">
-                    <p>Semi-detached Duplex</p>
+                    <p>{property.propertyType}</p>
                     <p>N900,000</p>
                 </div>
                 <p><span><GrLocation/></span>Asaba</p>
@@ -68,10 +52,3 @@ function Property() {
                     <img src="/assets/map.jpg" alt="map" />
                 </div>
            </div>
-           
-           <Footer /> 
-        </div>
-    )
-}
-
-export default Property

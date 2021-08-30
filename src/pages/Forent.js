@@ -43,7 +43,7 @@ useEffect(() => {
     }
 
     const displayProperties = properties.slice(pagesVisited, pagesVisited + propertyPerPage).map((property) => {
-        return <Card id={property.id} name={property.propertyType} city={property.city} 
+        return <Card id={property._id} name={property.propertyType} city={property.city} 
         image={property.propertyImages[0]} price={property.propertyPrice } date={showDate(property.addedDate)} />
     })
     const pageCount = Math.ceil(properties.length / propertyPerPage)
