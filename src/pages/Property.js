@@ -1,4 +1,5 @@
 import {React} from 'react'
+import {useParams} from 'react-router-dom'
 //import {useState} from 'react'
 import { GrLocation } from 'react-icons/gr'
 import { ImPhone } from 'react-icons/im'
@@ -10,9 +11,12 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer'
 
 function Property() {
+    const { id } = useParams()
    //const [isShowMore,setIsShowMore] = useState(false)
     return (
+       
         <div >
+             {console.log(id)}
             <NavBar />
             <div className="property">
                

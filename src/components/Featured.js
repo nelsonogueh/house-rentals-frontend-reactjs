@@ -6,6 +6,7 @@ import './Featured.css'
 import Card from '../components/Card';
 import Loader from './Loader'
 // import properties from '../data'
+
 //const url = "http://localhost:9000/api/vi/properties"
 function Featured() {
     const [properties, setProperties] = useState([]);
