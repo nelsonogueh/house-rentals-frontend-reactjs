@@ -9,8 +9,10 @@
     width: 85%;
     background-color: transparent;
     margin:7.56rem auto;
+
     /* background-color: crimson; */
     /* margin: 0px !important; */
+
 }
 .header{
     display: flex;
@@ -31,6 +33,7 @@
    
 }
 .featured-card{
+
    display: grid;
    grid-template-columns: 2fr 2fr 2fr 2fr !important;
    grid-template-rows: 0fr 0fr !important;
@@ -39,6 +42,15 @@
 }
 
 /* .paginationButtons{
+
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 4rem;
+   
+}
+
+.paginationButtons{
     width: 17.56rem;
     list-style: none;
     display: flex;
@@ -46,8 +58,12 @@
     margin:4rem auto;
    
     
+
 } */
 /* .paginationButtons a{
+
+}
+.paginationButtons a{
     width: 2rem;
     height: 2rem;
     display: flex;

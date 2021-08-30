@@ -1,7 +1,12 @@
+
 import { React, useState, useReducer} from 'react';
 //import { React, useState, useReducer, useEffect } from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 //import { Redirect,NavLink,Link,useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+
+import { React, useState, useReducer, useEffect } from 'react';
+import { Redirect,NavLink,Link,useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+
 import { BsEyeSlash, BsEye } from 'react-icons/bs'
 import axios from 'axios';
 import './SignIn.css'

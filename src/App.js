@@ -16,6 +16,9 @@ import Forent from './pages/Forent';
 import AddNewProperty from './pages/AddNewProperty';
 //import Loader from './components/Loader';
 
+import Loader from './components/Loader';
+
+
 
 
 function App() {
@@ -58,7 +61,9 @@ function App() {
             <Route exact path="/properties/:id" component={Property} />
             <Route exact path="/dashboard/:id" component={Dashboard}/>
             <Route exact path="/properties" component={Forent}/>
+
             <Route exact path="/AddNewProperty" children={<AddNewProperty/>} />
+
           </Switch>
         </main>
         {/* <NavbarUser />
