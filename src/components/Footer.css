@@ -74,11 +74,10 @@ box-sizing: border-box;
 .footer-details >div  p{
     margin-right: 4%;
     margin-left: 0%;
-
-.footer-detials >div  p{
+}
+.footer-details >div  p{
     margin-right: 4.81rem;
     margin-left: 1.25rem;
-
 
 }
 .footer-details img{

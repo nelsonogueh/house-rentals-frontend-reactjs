@@ -6,7 +6,7 @@ import Modal from '../components/Modal'
 
 //import Confirmation from '../components/Confirmation'
 
-import Confirmation from '../components/Confirmation'
+//import Confirmation from '../components/Confirmation'
 
 const reducer = (state,action) => {
     switch (action.type) {
@@ -93,9 +93,9 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             console.log(response)
 
             if (response.data.status === 'success') {
-            if (response.data.status == 'success') {
-
+                if (response.data.status === 'success') {
                 showConfirmation()
+                }
             }
             else {
                 // I am yet to create this modal
@@ -162,7 +162,7 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
 
             <span>I agree to <a href="#dfdf">Privacy policies</a>, <a href="#dfdfd">Terms & Conditions</a></span>
 
-            <span>I agree to <a href="#">Privacy policies</a>, <a href="#">Terms & Conditions</a></span>
+            <span>I agree to <a href="#ty">Privacy policies</a>, <a href="#yu">Terms & Conditions</a></span>
             </div>
             <div className="signup-btn">
                 <button id="btn" onClick={handleSubmit}>create account</button>
@@ -172,5 +172,4 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
         </div>
     )
 }
-
 export default Signup

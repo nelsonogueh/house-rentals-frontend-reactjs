@@ -3,8 +3,8 @@ import {React,useEffect,useState} from 'react'
 //import ReactPagenate from 'react-paginate'
 //import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
-import ReactPagenate from 'react-paginate'
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+// import ReactPagenate from 'react-paginate'
+// import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 import axios from 'axios'
 import './Featured.css'
@@ -29,34 +29,34 @@ useEffect(() => {
   },[url]);
     const addZero = (n) => {
         return n<10? `0${n}`:n;
+    }
 
-
-const url = "http://localhost:9000/api/vi/properties"
+// //const url = "http://localhost:9000/api/vi/properties"
 // const url = "https://ict-yep.herokuapp.com/api/v1/properties"
 
-function Featured() {
-    const [properties, setProperties] = useState([])
-    const [isLoading,setIsLoading] = useState(true)
+// function Featured() {
+//     const [properties, setProperties] = useState([])
+//     const [isLoading,setIsLoading] = useState(true)
 
-    const getData = async() => {
-        const response = await axios.get(url)
+//     const getData = async() => {
+//         const response = await axios.get(url)
         
-        console.log(response.data)
-        if (response.data.data) {
-            // console.log(response.data)
-            setProperties(response.data.data)
-            setIsLoading(false)
-            // console.log(properties)
-        }
-    }
-    useEffect(() => {
-       getData ()
-    },[])
+//         console.log(response.data)
+//         if (response.data.data) {
+//             // console.log(response.data)
+//             setProperties(response.data.data)
+//             setIsLoading(false)
+//             // console.log(properties)
+//         }
+//     }
+//     useEffect(() => {
+//        getData ()
+//     },[])
 
-    const addZero = (n) => {
-        return n<10? `0${n}`:n
+//     const addZero = (n) => {
+//         return n<10? `0${n}`:n
 
-    }
+//     }
     let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const showDate = (date) => {
         const today = new Date(date)
@@ -71,9 +71,6 @@ function Featured() {
         return <Card key='index' id={property._id} name={property.propertyType} city={property.city} 
         image={property.propertyImages[0]} price={property.propertyPrice} 
         date={showDate(property.addedDate)} />
-
-    const displayProperties = properties.map((property) => {
-        return <Card id={property._id} name={property.title} city={property.city} image={property.image} price={property.propertyPrice} date={showDate(property.addedDate)} />
 
     })
 

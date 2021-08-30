@@ -16,9 +16,6 @@ import Forent from './pages/Forent';
 import AddNewProperty from './pages/AddNewProperty';
 //import Loader from './components/Loader';
 
-import Loader from './components/Loader';
-
-
 
 
 function App() {
