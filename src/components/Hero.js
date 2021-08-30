@@ -30,7 +30,9 @@ function Hero() {
     return (
         <div className="hero">
             <img src="/assets/hero.jpg" className="img-fluid" alt="hero" />
+
             <img className="testimage" src="/assets/FIND YOUR DREAM hOME WITH US!.svg" alt="hero2" />
+
             <div className="hero-search container">
                 <div className="search search-0 container">
                     <div className="search-selector container">

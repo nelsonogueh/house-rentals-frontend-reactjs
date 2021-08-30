@@ -3,7 +3,11 @@ import axios from 'axios'
 import {BsEyeSlash,BsEye} from 'react-icons/bs'
 import './Signup.css'
 import Modal from '../components/Modal'
+
 //import Confirmation from '../components/Confirmation'
+
+import Confirmation from '../components/Confirmation'
+
 const reducer = (state,action) => {
     switch (action.type) {
         case 'NAME_ERROR':
@@ -87,7 +91,10 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
         confirmPassword
               })
             console.log(response)
+
             if (response.data.status === 'success') {
+            if (response.data.status == 'success') {
+
                 showConfirmation()
             }
             else {
@@ -152,7 +159,10 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             </div>
             <div className="privacy-group">
                 <input type="checkbox" name="" id="" onChange={ (e)=>setAgreed(e.target.checked)}/>
+
             <span>I agree to <a href="#dfdf">Privacy policies</a>, <a href="#dfdfd">Terms & Conditions</a></span>
+
+            <span>I agree to <a href="#">Privacy policies</a>, <a href="#">Terms & Conditions</a></span>
             </div>
             <div className="signup-btn">
                 <button id="btn" onClick={handleSubmit}>create account</button>
